@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>후기 작성 페이지</title>
+  
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/review-form.css">
+
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script defer src="js/index.js"></script>
+  <script defer src="js/review-form.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header--white">
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="img/logo_navy.png" alt="뷰잉뷰잉">
+      </a>
+      <div class="sub-menu">
+        <a href="login.html" class="btn login">로그인 | 회원가입</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- REVIEW FORM-->
+  <div class="review-form">
+    <div class="inner">
+
+      <form>
+        <fieldset>
+          <h1>후기 작성</h1>
+
+          <div class="hall-name">
+            <label class="form-label">공연장명</label>
+            <div>
+              <input list="datalistOptions" placeholder="공연장명을 입력해주세요." />
+              <datalist id="datalistOptions">
+                <option value="세종문화회관 대극장">
+                <option value="예술의전당 오페라극장">
+                <option value="충무아트센터 대극장">
+                <option value="블루스퀘어 신한카드홀">
+                <option value="잠실종합운동장 올림픽주경기장">
+                <option value="고척스카이돔">
+                <option value="잠실실내체육관">
+                <option value="올림픽공원 SK올림픽핸드볼경기장">
+                <option value="KSPO DOME(올림픽체조경기장)">
+              </datalist>
+            </div>
+          </div>
+
+          <div class="show-name">
+            <label class="form-label">공연명</label>
+            <input type="hall-name" placeholder="공연명을 입력해주세요." />
+          </div>
+
+          <div class="show-date">
+            <label class="form-label">관람일시</label>
+            <div>
+              <input type="date" value="2022-08-16"/>
+            </div>
+          </div>
+
+          <div class="seat">
+            <label class="form-label">좌석</label>
+              <div class="seat-info">
+              <input><span>층</span>
+              <input><span>구역</span>
+              <input><span>열</span>
+              <input><span>번</span>
+              </div>
+          </div>
+
+          <div class="star-review">
+            <label class="form-label">평가</label>
+            <div class="star-container">
+              <div>
+                <div>시야</div>
+                <div class="star">
+                  ☆☆☆☆☆
+                  <span>★★★★★</span>
+                  <input type="range" id="star" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                </div>
+              </div>
+              <div>
+                <div>음향</div>
+                <div class="star">
+                  ☆☆☆☆☆
+                  <span>★★★★★</span>
+                  <input type="range" id="star" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                </div>
+              </div>
+              <div>
+                <div>좌석편의</div>
+                <div class="star">
+                  ☆☆☆☆☆
+                  <span>★★★★★</span>
+                  <input type="range" id="star" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-review">
+            <label class="form-label">
+              사진
+              <b>(최대 3장)</b>
+            </label>
+            <div class="upload-container">
+              <label class="upload-label" id="label" for="input">
+                <div class="upload-inner" id="inner">
+                  <p>
+                    이곳을 <b>더블클릭</b> 또는 <b>파일을 드래그</b> 하세요
+                  </p>
+              </div>
+              </label>
+              <input id="input" class="input" accept="image/*" type="file" required="true" multiple="true" hidden="true">
+              <div class="preview-container">
+                <div class="preview" id="preview"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-profile">
+            <label class="form-label">프로필</label>
+            <div class="profile">
+              <div class="profile-property">
+                <div class="left">
+                  <span>키</span>
+                </div>
+                <div class="right">
+                  <input/><b>cm</b>
+                </div>
+              </div>
+              <div class="profile-property">
+                <div class="left">
+                  <span>앉은 키</span>
+                </div>
+                <div class="right">
+                  <select class="form-select">
+                    <option>작음</option>
+                    <option>보통</option>
+                    <option>큼</option>
+                  </select>
+                </div>
+              </div>
+              <div class="profile-property">                
+                <div class="glasses-lens">
+                  <input type="checkbox" id="glasses" value="glasses"><span>안경 착용</span>
+                  <input type="checkbox" id="lens" value="lens"><span>렌즈 착용</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-review">
+            <label class="form-label">후기</label>
+            <textarea rows="10"></textarea>
+          </div>
+        </fieldset>
+        <div class="submit">
+          <button type="submit" class="btn btn--upload">업로드</button>
+        </div>
+      </form>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

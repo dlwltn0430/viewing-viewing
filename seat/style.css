@@ -1,0 +1,7 @@
+#mainview_svg {
+  overflow: scroll;
+}
+#diagram_canvas_diagramLayer path {
+  /* fill: #ddd; */
+  stroke: transparent;
+}

@@ -1,0 +1,179 @@
+/* REVIEW-FORM */
+.review-form {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.review-form fieldset h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.review-form fieldset > div {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.review-form fieldset > div label {
+  flex-basis: 150px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+.review-form fieldset input, .review-form fieldset select, .review-form fieldset textarea {
+  border: 1px solid #04080D;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+.review-form fieldset .hall-name input, .review-form fieldset .show-name input {
+  width: 500px;
+}
+.review-form fieldset .seat input {
+  width: 50px;
+}
+.review-form fieldset .seat span {
+  margin: 0 10px 0 5px;
+}
+.review-form fieldset .star-review .star-container > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.review-form fieldset .star-review .star-container > div div:first-child {
+  flex-basis: 150px;
+  padding-right: 20px;
+}
+.review-form fieldset .star-review .star-container > div .star {
+  position: relative;
+  font-size: 1.3rem;
+  color: #ADAAB1;
+}
+.review-form fieldset .star-review .star-container > div .star input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.review-form fieldset .star-review .star-container > div .star span {
+  width: 0;
+  position: absolute;
+  left: 0;
+  color: #FABF41;
+  overflow: hidden;
+  pointer-events: none;
+}
+.review-form fieldset .photo-review > label b {
+  font-size: 0.8rem;
+  color: #ADAAB1;
+}
+.review-form fieldset .photo-review .upload-container {
+  width: calc(100% - 150px);
+  text-align: center;
+}
+.review-form fieldset .photo-review .upload-container .upload-label {
+  width: 100%;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.review-form fieldset .photo-review .upload-container .upload-label b {
+  color: #FF7AAA;
+}
+.review-form fieldset .photo-review .upload-container .upload-inner {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 180px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23333' stroke-width='2' stroke-dasharray='10%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+.review-form fieldset .photo-review .upload-container .upload-inner p {
+  width: 100%;
+}
+.review-form fieldset .photo-review .upload-container .preview-container {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
+}
+.review-form fieldset .photo-review .upload-container .preview-container .preview {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.review-form fieldset .photo-review .upload-container .preview-container .preview .container-img {
+  background-color: #D9DCFF;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  padding: 16px 10px;
+}
+.review-form fieldset .photo-review .upload-container .preview-container .preview .container-img .embed-img {
+  width: 130px;
+  height: 100px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.review-form fieldset .user-profile .profile {
+  display: flex;
+}
+.review-form fieldset .user-profile .profile .profile-property {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.review-form fieldset .user-profile .profile .profile-property .left {
+  margin-right: 10px;
+}
+.review-form fieldset .user-profile .profile .profile-property .right b {
+  margin-left: 5px;
+}
+.review-form fieldset .user-profile .profile .profile-property .right input, .review-form fieldset .user-profile .profile .profile-property .right select {
+  width: 100px;
+}
+.review-form fieldset .user-profile .profile .profile-property .glasses-lens {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.review-form fieldset .user-profile .profile .profile-property .glasses-lens input {
+  accent-color: #FF7AAA;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+.review-form fieldset .user-profile .profile .profile-property .glasses-lens #lens {
+  margin-left: 15px;
+}
+.review-form fieldset .user-profile .profile .profile-property .glasses-lens span {
+  margin-left: 5px;
+}
+.review-form fieldset .text-review textarea {
+  width: calc(100% - 150px);
+}
+.review-form .submit {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.review-form .submit .btn--upload {
+  width: 200px;
+  height: 50px;
+  color: #FF7AAA;
+  font-size: 16px;
+  background: #1A1F57;
+  border-radius: 50px;
+  border: none;
+}/*# sourceMappingURL=review-form.css.map */

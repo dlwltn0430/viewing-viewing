@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="buttons">로그인</button>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCmUGR61HHZi7x4hCWhO1t7TMoaSIXL73k",
+      authDomain: "auth-test-web-1-79eb6.firebaseapp.com",
+      projectId: "auth-test-web-1-79eb6",
+      storageBucket: "auth-test-web-1-79eb6.appspot.com",
+      messagingSenderId: "170711600497",
+      appId: "1:170711600497:web:76c72401652bbf57483ad0",
+      measurementId: "G-HMXBXFZ54R"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="firebase.js"></script>
+  
+</body>
+</html>

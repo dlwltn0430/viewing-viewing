@@ -1,0 +1,275 @@
+@import "_variables";
+@import "reset";
+
+//header
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  .right {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .login {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        margin: 0 10px;
+      }
+      a {
+        cursor: pointer;
+        color: black;
+        &:hover {
+          color: $main_pink;
+        }
+    }
+    }
+  }
+}
+
+// USER-INFO
+.user-info {
+    margin-top: 100px;
+    padding-top: 50px;
+    h1 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 50px;
+    }
+    
+    .name {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      label {
+        font-weight: 700;
+        span {
+          color: $main_pink;
+        }
+      }
+      .name-input {
+        input {
+          padding-left: 10px;
+          margin-left: 70px;
+          box-sizing: border-box;
+          width: 300px;
+          height: 30px;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .email {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      label {
+        font-weight: 700;
+        span {
+          color: $main_pink;
+        }
+      }
+      .email-input {
+        input {
+          padding-left: 10px;
+          margin-left: 55px;
+          box-sizing: border-box;
+          width: 300px;
+          height: 30px;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+      } 
+    }
+    
+    .nick-name {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      label {
+        font-weight: 700;
+        span {
+          color: $main_pink;
+        }
+      }
+      .nickName-input {
+        input {
+          padding-left: 10px;
+          margin-left: 55px;
+          box-sizing: border-box;
+          width: 300px;
+          height: 30px;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+      }
+      #warning {
+        margin-left: 10px;
+        color: $main_pink;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    .birth {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      label {
+        font-weight: 700;
+        span {
+          color: $main_pink;
+        }
+      }
+      select {
+        #initial {
+          color: #6B696D;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        padding-left: 15px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        width: 80px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 10px;
+      }
+      .year {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        span {
+          padding-left: 5px;
+        }
+      }
+      .month {
+        display: flex;
+        align-items: center;
+        span {
+          padding-left: 5px;
+        }
+      }
+      .day {
+        display: flex;
+        align-items: center;
+        span {
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .gender {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      label {
+        font-weight: 700;
+        span {
+          color: $main_pink;
+        }
+      }
+      .gender-select {
+        margin-left: 70px;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        input {
+          accent-color: $main_navy;
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+        #female, #private {
+          margin-left: 50px;
+        }
+      }  
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      .height {
+        display:flex;
+        margin-left: 60px;
+        align-items: center;
+        span {
+          padding-left: 5px;
+          padding-right: 10px;
+        }
+      }
+      .sit-height {
+        display:flex;
+        align-items: center;
+        padding-left: 30px;
+        select {
+          #initial {
+            color: #6B696D;
+            font-weight: 400;
+            font-size: 14px;
+          }
+          padding-left: 15px;
+          margin-left: 10px;
+          box-sizing: border-box;
+          width: 80px;
+          height: 30px;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+      }
+      .glasses-lens {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        input {
+          accent-color: $main_pink;
+          width: 20px;
+          height: 20px;
+          border-radius: 2px;
+        }
+        #lens {
+          margin-left: 15px;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+      label {
+        font-weight: 700;
+      }
+      input {
+        padding-left: 10px;
+        box-sizing: border-box;
+        width: 100px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 10px;
+      }
+    }
+
+    .submit {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      button {
+      width: 200px;
+      height: 50px;
+      color: $main_pink;
+      font-size: 16px;
+      background: $main-navy;
+      border-radius: 50px;
+      border: none;
+      }
+  }
+}

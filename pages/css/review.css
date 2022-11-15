@@ -1,0 +1,32 @@
+/* HEADER */
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* HALL DETAIL */
+.hall-detail {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.hall-detail .section-info p:nth-child(1) {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hall-detail .section-info p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.hall-detail .filter {
+  height: 35px;
+  background-color: gainsboro;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+/* REVIEW LIST */
+.review-list {
+  margin-top: 30px;
+}/*# sourceMappingURL=review.css.map */

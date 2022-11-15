@@ -1,0 +1,70 @@
+@import "../scss/variables";
+
+.section-select {
+  margin-top: 130px;
+  line-height: 30px;
+  .section-info {
+    a {
+      font-size: 1.5rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #000;
+    }
+  }
+  .section-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    img {
+      height: 150px;
+    }
+  }
+  ul {
+    display: flex;
+    margin-top: 10px;
+    font-size: 1rem;
+    li {
+      margin-right: 10px;
+      a {
+        color: #bbb;
+      }
+    }
+  }
+}
+
+#diagram_canvas_diagramLayer path {
+  stroke: transparent;
+}
+
+#diagram_canvas {
+  .e-button {
+    background-color: rgb(193, 193, 193);
+  }
+  .e-scrollbar {
+    // .e-hscroll e-box {
+    //   height: 10px;
+    // }
+    .e-vhandle, 
+    .e-hhandle {
+      border-radius: 10px;
+      background-color: $main_navy;
+    }
+    .e-vhandlespace, .e-hhandlespace {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .e-vhandle.e-v-line {
+      width: 60%;
+    }
+    .e-hhandle.e-h-line {
+      height: 60%;
+      margin-top: 2px;
+    }
+  }
+}
+
+.review-list {
+  margin-top: 80px;
+  display: none;
+}

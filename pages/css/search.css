@@ -1,0 +1,98 @@
+.search-result {
+  margin-top: 140px;
+}
+.search-result h2 {
+  font-size: 1.2rem;
+}
+.search-result h2 b {
+  color: #FF7AAA;
+}
+.search-result .result-container > div {
+  display: none;
+  margin-top: 40px;
+}
+.search-result .result-container > div h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.search-result .result-container > div .itemList {
+  padding: 0 20px;
+}
+.search-result .result-container > div .itemList li {
+  margin-top: 30px;
+  display: flex;
+}
+.search-result .result-container .hall-result .itemList li {
+  align-items: flex-start;
+}
+.search-result .result-container .hall-result .itemList li .photo img {
+  width: 332px;
+  height: 196px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.search-result .result-container .hall-result .itemList li .data {
+  padding: 10px;
+  padding-left: 20px;
+}
+.search-result .result-container .hall-result .itemList li .data .itemName {
+  margin-bottom: 20px;
+}
+.search-result .result-container .hall-result .itemList li .data .itemName a {
+  font-size: 1.2rem;
+}
+.search-result .result-container .hall-result .itemList li .data .itemInfo > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.search-result .result-container .hall-result .itemList li .data .itemInfo > div img {
+  width: 22px;
+  margin-right: 10px;
+}
+.search-result .result-container .show-result li .photo img {
+  width: 100px;
+  height: 125px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.search-result .result-container .show-result li .data {
+  padding: 10px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search-result .result-container .show-result li .data .itemName {
+  font-size: 1.2rem;
+}
+.search-result .result-container .show-result li .data .itemInfo {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #828282;
+}
+.search-result .result-container .artist-result .itemList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+.search-result .result-container .artist-result li .photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.search-result .result-container .artist-result li .data {
+  padding: 10px;
+}
+.search-result .result-container .artist-result li .data .itemName {
+  margin-bottom: 30px;
+}
+.search-result .result-container .artist-result li .data .itemInfo {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #828282;
+}/*# sourceMappingURL=search.css.map */

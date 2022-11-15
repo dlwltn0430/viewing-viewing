@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+header .right {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header .right .login {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+header .right .login img {
+  width: 30px;
+  margin: 0 10px;
+}
+header .right .login a {
+  cursor: pointer;
+  color: black;
+}
+header .right .login a:hover {
+  color: #FF7AAA;
+}
+
+.user-info {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.user-info h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+.user-info .name {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .name label {
+  font-weight: 700;
+}
+.user-info .name label span {
+  color: #FF7AAA;
+}
+.user-info .name .name-input input {
+  padding-left: 10px;
+  margin-left: 70px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .email {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .email label {
+  font-weight: 700;
+}
+.user-info .email label span {
+  color: #FF7AAA;
+}
+.user-info .email .email-input input {
+  padding-left: 10px;
+  margin-left: 55px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .nick-name {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .nick-name label {
+  font-weight: 700;
+}
+.user-info .nick-name label span {
+  color: #FF7AAA;
+}
+.user-info .nick-name .nickName-input input {
+  padding-left: 10px;
+  margin-left: 55px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .nick-name #warning {
+  margin-left: 10px;
+  color: #FF7AAA;
+  font-size: 12px;
+  font-weight: 400;
+}
+.user-info .birth {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .birth label {
+  font-weight: 700;
+}
+.user-info .birth label span {
+  color: #FF7AAA;
+}
+.user-info .birth select {
+  padding-left: 15px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .birth select #initial {
+  color: #6B696D;
+  font-weight: 400;
+  font-size: 14px;
+}
+.user-info .birth .year {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.user-info .birth .year span {
+  padding-left: 5px;
+}
+.user-info .birth .month {
+  display: flex;
+  align-items: center;
+}
+.user-info .birth .month span {
+  padding-left: 5px;
+}
+.user-info .birth .day {
+  display: flex;
+  align-items: center;
+}
+.user-info .birth .day span {
+  padding-left: 5px;
+}
+.user-info .gender {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .gender label {
+  font-weight: 700;
+}
+.user-info .gender label span {
+  color: #FF7AAA;
+}
+.user-info .gender .gender-select {
+  margin-left: 70px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+.user-info .gender .gender-select input {
+  accent-color: #1A1F57;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.user-info .gender .gender-select #female, .user-info .gender .gender-select #private {
+  margin-left: 50px;
+}
+.user-info .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user-info .profile .height {
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+}
+.user-info .profile .height span {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.user-info .profile .sit-height {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.user-info .profile .sit-height select {
+  padding-left: 15px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .profile .sit-height select #initial {
+  color: #6B696D;
+  font-weight: 400;
+  font-size: 14px;
+}
+.user-info .profile .glasses-lens {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.user-info .profile .glasses-lens input {
+  accent-color: #FF7AAA;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+.user-info .profile .glasses-lens #lens {
+  margin-left: 15px;
+}
+.user-info .profile .glasses-lens span {
+  margin-left: 5px;
+}
+.user-info .profile label {
+  font-weight: 700;
+}
+.user-info .profile input {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.user-info .submit {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.user-info .submit button {
+  width: 200px;
+  height: 50px;
+  color: #FF7AAA;
+  font-size: 16px;
+  background: #1A1F57;
+  border-radius: 50px;
+  border: none;
+}/*# sourceMappingURL=initial-login.css.map */

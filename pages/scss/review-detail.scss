@@ -1,0 +1,91 @@
+/* HEADER */
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  font: inherit;
+}
+
+/* REVIEW */
+.review {
+    margin-top: 100px;
+    padding-top: 50px;
+
+    .seat-info {
+      font-size: 1.5rem;
+    }
+    .review-detail {
+      margin-top: 30px;
+      div {
+        margin-bottom: 15px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        img {
+          width: 50px;
+        }
+        .left {
+          padding-right: 20px;
+        }
+        .profile__name {
+          font-weight: 600;
+          padding-left: 5px;
+        }
+        .profile__info {
+          display: flex;
+          margin-top: 10px;
+          li {
+            border: 1px solid #999;
+            border-radius: 30px;
+            padding: 8px 12px;
+            margin-right: 10px;
+            font-size: .8rem;
+            color: #999;
+            span {
+              color: #333;
+            }
+          }
+        }
+      }
+      .show-info {
+        font-size: 1.2rem;
+        display: flex;
+        p {
+          padding-right: 10px;
+        }
+      }
+      .star-container {
+        font-size: 1rem;
+        margin-right: 10px;
+        .star {
+          color: rgb(255, 191, 0);
+          margin-right: 15px;
+        }
+      }
+    }
+    .review-container{
+      div {
+        margin-top: 30px;
+      }
+      .review__img {
+        ul.imgs {
+          display: flex;
+          li {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            img {
+              width: 250px;
+              height: 250px;
+              border-radius: 8px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .review__text {
+          // background-color: lightgray;
+          font-size: 1rem;
+          line-height: 1.4rem;
+      }
+    }
+}

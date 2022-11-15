@@ -1,0 +1,119 @@
+@import "_variables";
+
+.search-result {
+  margin-top: 140px;
+  h2 {
+    font-size: 1.2rem;
+    b {
+      color: $main_pink;
+    }
+  }
+  .result-container {
+    >div {
+      display: none;
+      margin-top: 40px;
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .itemList {
+        padding: 0 20px;
+        li {
+          margin-top: 30px;
+          display: flex;
+        }
+      }
+    }
+    .hall-result {
+      .itemList {
+        li {
+          align-items: flex-start;
+          .photo {
+            img {
+              width: 332px;
+              height: 196px;
+              object-fit: cover;
+              border-radius: 10px;
+            }
+          }
+          .data {
+            padding: 10px;
+            padding-left: 20px;
+            .itemName {
+              margin-bottom: 20px;
+              a {
+                font-size: 1.2rem;
+              }
+            }
+            .itemInfo {
+              >div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                img {
+                  width: 22px;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .show-result {
+      li {
+        .photo {
+          img {
+            width: 100px;
+            height: 125px;
+            border-radius: 5px;
+            object-fit: cover;
+          }
+        }
+        .data {
+          padding: 10px;
+          padding-left: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .itemName {
+            font-size: 1.2rem;
+          }
+          .itemInfo {
+            font-size: .9rem;
+            line-height: 1rem;
+            color: #828282;
+          }
+        }
+      }
+    }
+    .artist-result {
+      .itemList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+      }
+      li {
+        .photo {
+          img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        .data {
+          padding: 10px;
+          .itemName {
+            margin-bottom: 30px;
+          }
+          .itemInfo {
+            font-size: .9rem;
+            line-height: 1rem;
+            color: #828282;
+          }
+        }
+      }
+    }
+  }
+}

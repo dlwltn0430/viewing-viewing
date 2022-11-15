@@ -1,0 +1,224 @@
+@import "_variables";
+@import "reset";
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COMMON */
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: 'NanumSquareRound';
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.inner {
+  // width: 900px;
+  margin: 0 $side_margin;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  background: #061B44; 
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      img {
+        height: 40px;
+      }
+    }
+    .search-container {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      input {
+        height: 40px;
+        border: none;
+        border-radius: 25px;
+        padding-left: 25px;
+        font-size: 14px;
+      }
+    }
+    .sub-menu {
+      .login {
+        font-size: .8rem;
+        border: 1px solid white;
+        color: white;
+        transition: .3s;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+      height: 100px;
+      display: flex;
+      align-items: center;
+      .profile {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin: 0 10px;
+        }
+      }
+      .profile {
+        color: white;
+      }
+      a {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        cursor: pointer;
+        color: white;
+        &:hover {
+          color: $main_pink;
+        }
+      }
+    }
+  }
+}
+.header--white {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  .inner {
+    .sub-menu {
+      .login {
+        border: 1px solid $main_navy;
+        color: $main_navy;
+        &:hover {
+          background-color: $main_navy;
+          color: white;
+        }
+      }
+      .profile {
+        color: black;
+      }
+      a {
+        color: black;
+        &:hover {
+          color: $main_pink;
+        }
+      }
+    }
+  }
+}
+
+/* BANNER */
+.banner {
+  margin-top: 100px;
+  img{
+    width: 100%;
+  }
+}
+
+/* RECENT-REVIEW */
+.recent-review {
+  margin-top: 32px;
+  padding-bottom: 30px;
+}
+.review-list {
+  .review-container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    h3 {
+      font-size: 1.5em;
+      margin-right: 10px;
+    }
+  }
+  .review-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, calc(100% / 4)));
+    gap: 25px 13px;
+    justify-content: space-between;
+    .review {
+      cursor: pointer;
+      .hoverimgchange{
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+        .before { 
+          border:0px; 
+          display:block; 
+          position:absolute;
+          top: 0;
+          left: 0;
+          transition: opacity .5s; 
+          &:hover {
+            opacity: 0;    
+          }
+        }
+      }
+      .card-body {
+        background: #FAFAFA;
+        border-radius: 10px;
+        padding: 15px;
+        .review-info-top {
+          display: flex;
+          justify-content: space-between;
+          .yellow-star {
+            font-size: 1.1rem;
+            color: #FABF41;
+          }
+          span {
+            font-size: .7rem;
+            color: #adaab1;
+          }
+        }
+        p {
+          margin-top: 8px;
+          &:nth-child(2) {
+            font-size: .7rem;
+            color: #adaab1;
+          }
+          &:nth-child(3) {
+            font-size: .9rem;
+          }
+          &:nth-child(4) {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* LOGIN AREA */
+.login-area {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  img {
+    cursor: pointer;
+  }
+}
